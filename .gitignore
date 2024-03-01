@@ -1,0 +1,8 @@
+.luarc.json
+.venv
+.quarto
+public
+/.luarc.json
+_freeze
+index_files
+/.quarto/

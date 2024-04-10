@@ -1,21 +1,26 @@
 ---
 title: "Anthology Template Document"
+session: "Summer 2023"
 jupyter: python3
+toc: true
 execute: 
   freeze: auto
   echo: false
 format:
   html:
     code-fold: true
+    template: template/template.html
+    template-partials: 
+      - template/title-block.html
 image: "data/grand-tour.png"
-multipleLeads: false
-lead:
+project-members:
   - name: Giovanna Ceserani
     designation: Faculty Director of CESTA and Associate Professor of Classics
-multipleInterns: false
-intern:
   - name: Raagavi Ragothaman
-    quarter: Summer, 2023
+    designation: Intern - Summer, 2023
+
+project-description: "How does our understanding of Christianity shift when we recognize that for over half its history Christianity’s geographic center was not Rome, nor even Constantinople, but rather Baghdad? Stretching from Turkey, throughout the Middle East, across Afghanistan, down to India, up to Tibet, and into China, the Church of the East provides one of the richest examples of early globalism and Christian-Muslim encounters. Its adherents, however, usually wrote in a dialect of Aramaic called Syriac which only a handful of modern scholars can read. As a result, the Church of the East appears only rarely in modern scholarship. Professor Penn’s current book project, The Church of Baghdad, challenges modern perceptions of pre-modern religion by asking two interrelated questions: What changes if global Christianity began centuries earlier than commonly imagined? What must we change if our understanding of the increasingly popular phrase “the global middle ages” simply isn’t big enough to accommodate first millennium Christianity? To explore these issues, the project centers on a corpus of recently published letters from Timothy I, the person who—quite literally—brought the Church of the East to Baghdad."
+
 ---
 ## Project Description
 In the 18th century, thousands of Northern Europeans traveled to Italy for a journey of cultural and symbolic capital that they called the Grand Tour. These travels were a formative institution of modernity and contributed to a massive reimagining of politics and the arts, ideas about leisure, the market for culture, and the practices of professionalism. Since 2008, the Grand Tour Project (grandtour.stanford.edu) has generated digital tools, analyses, and visualizations to bring us closer to the diverse travelers who collectively represent 18th-century travel to Italy. We have been digitizing and enhancing John Ingamells’ Dictionary of British and Irish Travelers to Italy 1701-1800 to create a searchable database of more than six thousand entries. This past year the project’s focus has been on preparing this interactive database and an accompanying digital volume for publication with the title A World Made by Travel: The Digital Grand Tour for the Stanford University Press Digital Series. CESTA intern alumni Ashwin Ramaswami and Ryan Tan returned to the project to work on this exciting phase as we refined both development and design to satisfy the press’s guidelines, anonymous reviewers’ comments, digital accessibility, and best practices for digital sustainability and preservation. Raagavi Ragothaman, a CS coterm master’s student, also contributed in crucial ways, focusing on interactivity features and data visualizations.

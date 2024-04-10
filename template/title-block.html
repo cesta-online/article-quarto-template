@@ -1,0 +1,16 @@
+<header id="title-block-header">
+  $if(session)$<p class="session">$session$</p>$endif$
+  $if(title)$<h1 class="title">$title$</h1>$endif$
+  $if(subtitle)$
+  <p class="subtitle">$subtitle$</p>
+  $endif$
+</header>
+<div>
+  $for(project-members)$
+  <div>
+    <p class="project-members">$project-members.name$</p>
+    <p class="project-members">$project-members.designation$</p>
+  </div>
+  $endfor$
+  $if(project-description)$<p class="project-description">$project-description$</p>$endif$
+</div>

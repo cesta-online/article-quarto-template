@@ -5,12 +5,18 @@
   <p class="subtitle">$subtitle$</p>
   $endif$
 </header>
-<div>
-  $for(project-members)$
-  <div>
-    <p class="project-members">$project-members.name$</p>
-    <p class="project-members">$project-members.designation$</p>
+<div class="project-details-container">
+  <div class="project-members-container">
+    <h5>Project Members</h5>
+    $for(project-members)$
+    <div class="project-member">
+      <p class="name">$project-members.name$</p>
+      <p class="designation">$project-members.designation$</p>
+    </div>
+    $endfor$
   </div>
-  $endfor$
-  $if(project-description)$<p class="project-description">$project-description$</p>$endif$
+  $if(project-description)$<div class="project-description-container">
+    <h5>Project Description</h5>
+    <p class="project-description">$project-description$</p>
+  </div>$endif$
 </div>

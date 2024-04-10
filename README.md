@@ -4,7 +4,7 @@
 
 - Git
 - Python 3.6 or later
-  For Mac, use Homebrew to install both Git and Python if you don't have them installed already.
+  > For Mac, use Homebrew to install both Git and Python if you don't have them installed already.
 - [Quarto](https://quarto.org)
 - [VS Code](https://code.visualstudio.com/)
   - GitHub should be configured in VS Code to manage the repository easily

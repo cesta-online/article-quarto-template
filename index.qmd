@@ -11,37 +11,126 @@ format:
     template-partials: 
       - template/title-block.html
 # do not edit ends
-title: "Anthology Template Document"
+title: "Anthology Article Template"
 session: "Summer 2023"
 jupyter: python3
-image: "data/grand-tour.png"
+image: "data/imgs/placeholder.jpg"
 project-members:
-  - name: Giovanna Ceserani
-    designation: Faculty Director of CESTA and Associate Professor of Classics
-  - name: Raagavi Ragothaman
+  - name: Dr. Jane Doe
+    designation: Faculty Director of Department
+  - name: John Doe
     designation: Intern - Summer, 2023
 
-project-description: "How does our understanding of Christianity shift when we recognize that for over half its history Christianity’s geographic center was not Rome, nor even Constantinople, but rather Baghdad? Stretching from Turkey, throughout the Middle East, across Afghanistan, down to India, up to Tibet, and into China, the Church of the East provides one of the richest examples of early globalism and Christian-Muslim encounters. Its adherents, however, usually wrote in a dialect of Aramaic called Syriac which only a handful of modern scholars can read. As a result, the Church of the East appears only rarely in modern scholarship. Professor Penn’s current book project, The Church of Baghdad, challenges modern perceptions of pre-modern religion by asking two interrelated questions: What changes if global Christianity began centuries earlier than commonly imagined? What must we change if our understanding of the increasingly popular phrase “the global middle ages” simply isn’t big enough to accommodate first millennium Christianity? To explore these issues, the project centers on a corpus of recently published letters from Timothy I, the person who—quite literally—brought the Church of the East to Baghdad."
+project-description: "Project Description contains few lines of description about the project. The description should be succint and give the reader a brief overview of what they could expect in the article. The project description can span from 4-5 lines and it is expected to capture the complete essence of the project. This article page comprises of two sub-articles related to the group. This article page is made using Quarto."
 
 ---
-# Article 1
+# Title of Article 1
 :::{.article-author}
 John Doe
 :::
-In the 18th century, thousands of Northern Europeans traveled to Italy for a journey of cultural and symbolic capital that they called the Grand Tour. These travels were a formative institution of modernity and contributed to a massive reimagining of politics and the arts, ideas about leisure, the market for culture, and the practices of professionalism. Since 2008, the Grand Tour Project (grandtour.stanford.edu) has generated digital tools, analyses, and visualizations to bring us closer to the diverse travelers who collectively represent 18th-century travel to Italy. We have been digitizing and enhancing John Ingamells’ Dictionary of British and Irish Travelers to Italy 1701-1800 to create a searchable database of more than six thousand entries. This past year the project’s focus has been on preparing this interactive database and an accompanying digital volume for publication with the title A World Made by Travel: The Digital Grand Tour for the Stanford University Press Digital Series. CESTA intern alumni Ashwin Ramaswami and Ryan Tan returned to the project to work on this exciting phase as we refined both development and design to satisfy the press’s guidelines, anonymous reviewers’ comments, digital accessibility, and best practices for digital sustainability and preservation. Raagavi Ragothaman, a CS coterm master’s student, also contributed in crucial ways, focusing on interactivity features and data visualizations.
+This article is written using [Quarto's Markdown](https://quarto.org/docs/authoring/markdown-basics.html). All the quarto markdown tags are supported for authoring the article. Please refer to the Quarto's official documentation for the available markdown options. Quarto allows a variety of features such using figures, tables, diagrams, videos, embeds, code annotations and more. It allows the authors to run Python scripts and embed the output in the article.
 
-## Subheading
-For the project’s publication, we wanted to communicate immediately and clearly how the data for the more than six thousand travelers in the database is not only incomplete but also that this incompleteness is unevenly distributed. For any one traveler, we might have a lot of data about their journey but very little about their life—maybe not even their date of birth. We used the parallel sets visualization (originally created using Titanic passengers’ data) to convey this information showing at once the correlations among five dimensions across the entire database: 1) whether we had data about travelers’ dates of birth and death, 2) about their occupation and education, 3) the gender of the travelers, 4) how many data points (visits) we had for their journeys, and, finally, 5) whether the travelers’ entries were found in the original Dictionary, or if we newly created their entries in the course of the project as we recovered forgotten travelers.
+## Authoring features of Quarto
+In this section, let's see some of the authoring features of Quarto.
 
-### Sub-sub heading
-The parallel sets offer an interactive visualization: by hovering over the various curved sections, the reader can appreciate how specific dimensions correlate in the database. This screenshot shows that by hovering on the yellow fine curved line in the last panel, you see that there are twelve women in the database for whom we have both birth and death dates, who had entries in the original Dictionary, and who are among the 2% of travelers for whom we have data for between 26 and 74 visits during their journeys.
 
-### Sub-sub heading
-Raagavi in a data analysis and visualization session discussing an early version of the parallel sets visualization with digital design professor Michele Graffieti, who visited CESTA last spring from DensityDesign Lab at the Italian Politecnico University of Milan—the best work happens collaboratively!
+### Callouts
 
-# Article 2
+Quarto allows different types of callouts to emphasize the content.
+
+::: {.callout-note}
+Note that there are five types of callouts, including:
+`note`, `warning`, `important`, `tip`, and `caution`.
+:::
+
+::: {.callout-tip}
+## Tip with Title
+This is an example of a callout with a title.
+:::
+
+::: {.callout-caution collapse="true"}
+## Expand To Learn About Collapse
+This is an example of a 'folded' caution callout that can be expanded by the user. You can use `collapse="true"` to collapse it by default or `collapse="false"` to make a collapsible callout that is expanded by default.
+:::
+
+
+### Figures
+In Quarto, figures can be easily imported using the markdown syntax, given the image is stored in the codebase. You can see the example given below.
+
+![This is an example image](data/imgs/placeholder.jpg)
+
+Below is a full column image.
+
+:::{.column-page}
+![](data/imgs/placeholder.jpg)
+:::
+
+
+
+### Tables
+In Quarto, tables can be easily created using the pipe table markdown syntax. You can see the example given below.
+
+| Default | Left | Right | Center |
+|---------|:-----|------:|:------:|
+| 12      | 12   |    12 |   12   |
+| 123     | 123  |   123 |  123   |
+| 1       | 1    |     1 |   1    |
+
+: Demonstration of pipe table syntax
+
+
+### Diagrams
+Quarto allows natively the authors to create diagrams using Mermaid and Graphviz. Check the [official documentation](https://quarto.org/docs/authoring/diagrams.html) for more details.
+
+Below is an example of a Mermaid diagram.
+```{mermaid}
+flowchart LR
+  A[Hard edge] --> B(Round edge)
+  B --> C{Decision}
+  C --> D[Result one]
+  C --> E[Result two]
+```
+
+### Videos
+In Quarto, videos can be embedded from both locally and remote sources such as YouTube and Vimeo.
+{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}
+
+### Appendices and Footnotes
+Quarto allows the authors to create appendices and footnotes easily.
+
+#### Appendix
+In Quarto, appendices can be created using the `.appendix` class. The appendix section is placed at the end of the document and is not included in the table of contents.
+
+##### Appendix Example {.appendix}
+Here is an example of an appendix.
+
+#### Footnote
+Here is a footnote reference,[^1] and another.[^longnote]
+
+[^1]: Here is the footnote.
+
+[^longnote]: Here's one with multiple blocks.
+
+    Subsequent paragraphs are indented to show that they
+belong to the previous footnote.
+
+    The whole paragraph can be indented, or just the first
+    line.  In this way, multi-paragraph footnotes work like
+    multi-paragraph list items.
+
+
+
+
+# Computation features of Quarto
 :::{.article-author}
-John Doe
+Joe Doe
 :::
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+
+## Matlab Plot
+
+::: {.content-visible when-format="pdf"}
+The below content will appear only in PDF format.
+![](data/imgs/placeholder.jpg)
+:::

@@ -20,3 +20,19 @@
 - Install the required packages using `pip install -r requirements.txt`
 - Preview the template using `quarto preview`
 - Render the updated website using `quarto render`
+
+## Creating a public github repo for submission
+
+- Run `quarto render` to generate the website
+- This will create a `public` folder with the website files
+- Create a new repository in GitHub without any files. Use the following naming convention: `acl-anthology-YYYY`
+- Push the contents of the `public` folder to the new repository with the following commands:
+  - Go to the `public` folder using `cd public` if you are not already in the folder
+  - Initialize the repository using `git init`
+  - Set the default branch to `main` using `git checkout -b main`
+  - Add the files to the repository using `git add .`
+  - Commit the changes using `git commit -m "Initial commit"`
+  - Add the remote repository using `git remote add origin <repository-url>`
+  - Push the changes to the repository using `git push -u origin main`
+- You can also Github Pages to host the website in your Github account and share the link internally for review
+- Once your article is finalized, submit the repository link to publish it in the main website

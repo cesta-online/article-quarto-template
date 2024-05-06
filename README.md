@@ -33,6 +33,7 @@
 - Create a new repository in GitHub website without any files. Use the following naming convention: `anthology-{project-name}-{session}-public`. For example, `anthology-knowing-systemic-racism-spring-2023-public`. This respository link will be used later to push the contents of the `public` folder.
 - Create a new directory in your local machine outside the current active repository. This new directory will be used to push the contents of the `public` folder to the new repository in Github.
 - Copy the contents of the `public` folder to the new directory
+  - The new directory should have `index.html` and other files and folders from the `public` folder in the root
 - Open the new directory in VS Code
 - Use terminal in VS Code to push the contents to the new repository
   - Initialize the repository using `git init`

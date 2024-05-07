@@ -25,25 +25,19 @@
 - Activate the virtual environment using `source .venv/bin/activate` (Mac & Linux) or `.\.venv\Scripts\Activate` (Windows)
 - Install the required packages using `pip install -r requirements.txt`
 - Preview the template using `quarto preview`
+- Running `quarto preview` will create the website files in the `public` folder. You can use Github Pages to host the website in your Github account and share the link internally for review. The website link will be in the format `https://{github-username}.github.io/{repository-name}/public`.
 
 ## Creating a new public github repo for submission
 
-- Run `quarto render` to generate the article web files
-- This will create a `public` folder with the website files
-- Create a new repository in GitHub website without any files. Use the following naming convention: `anthology-{project-name}-{session}-public`. For example, `anthology-knowing-systemic-racism-spring-2023-public`. This respository link will be used later to push the contents of the `public` folder.
-- Create a new directory in your local machine outside the current active repository. This new directory will be used to push the contents of the `public` folder to the new repository in Github.
-- Copy the contents of the `public` folder to the new directory
-  - The new directory should have `index.html` and other files and folders from the `public` folder in the root
-- Open the new directory in VS Code
-- Use terminal in VS Code to push the contents to the new repository
-  - Initialize the repository using `git init`
-  - Set the default branch to `main` using `git checkout -b main`
-  - Add the files to the repository using `git add .`
-  - Commit the changes using `git commit -m "Initial commit"`
-  - Add the remote repository using `git remote add origin <repository-url>`. This repository is the one created in the above step.
-  - Push the changes to the remote repository using `git push -u origin main`
-- You can also Github Pages to host the website in your Github account and share the link internally for review
-- Once your article is finalized, submit the new repository link to publish it in the main website
+- Once your article is ready for submission, write an email to `cesta-online@stanford.edu` with the following information:
+  - Subject: Anthology Submission: {Project Name}
+  - Body:
+    - Your article link hosted in Github Pages
+    - Your Github Username
+- The CESTA team will review your submission. If approved, an empty repository will be created in the CESTA Github organization and you will be added as a collaborator.
+- Run `quarto render` to generate the article web files in the `public` folder of your current repository.
+- You can then **push your article files inside the `public` folder of your current repository** to the new repository provided by CESTA.
+- Once the files are pushed to the new repository, the CESTA team will review the submission and publish the article on the CESTA website.
 
 ## Important Notes
 

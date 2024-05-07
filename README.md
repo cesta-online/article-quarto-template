@@ -16,7 +16,7 @@
 - Make a copy of the template to your GitHub account
   - The template can be copied by clicking on the `Use this template` button in the repository
   - Provide a name for the repository and click on `Create repository from template`.
-  - The repository name should be in the format `anthology-{project-name}-{quarter}-{year}`. For example, `anthology-knowing-systemic-racism-spring-2023`.
+  - The repository name should be in the format `anthology-{project-name}-{quarter}-{year}`. For example, `anthology-know-systemic-racism-spring-2023`.
   - Keep the repository public.
   - Copy the repository link to your clipboard.
 - Using VS Code, clone the copied repository to your local machine
@@ -30,7 +30,7 @@
 
 - Run `quarto render` to generate the article web files
 - This will create a `public` folder with the website files
-- Create a new repository in GitHub website without any files. Use the following naming convention: `anthology-{project-name}-{session}-public`. For example, `anthology-knowing-systemic-racism-spring-2023-public`. This respository link will be used later to push the contents of the `public` folder.
+- Create a new repository in GitHub website without any files. Use the following naming convention: `anthology-{project-name}-{quarter}-{year}-public`. For example, `anthology-know-systemic-racism-spring-2023-public`. This respository link will be used later to push the contents of the `public` folder.
 - Create a new directory in your local machine outside the current active repository. This new directory will be used to push the contents of the `public` folder to the new repository in Github.
 - Copy the contents of the `public` folder to the new directory
   - The new directory should have `index.html` and other files and folders from the `public` folder in the root

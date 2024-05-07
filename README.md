@@ -16,7 +16,7 @@
 - Make a copy of the template to your GitHub account
   - The template can be copied by clicking on the `Use this template` button in the repository
   - Provide a name for the repository and click on `Create repository from template`.
-  - The repository name should be in the format `anthology-{project-name}-{session}`. For example, `anthology-knowing-systemic-racism-spring-2023`.
+  - The repository name should be in the format `anthology-{project-name}-{quarter}-{year}`. For example, `anthology-knowing-systemic-racism-spring-2023`.
   - Keep the repository public.
   - Copy the repository link to your clipboard.
 - Using VS Code, clone the copied repository to your local machine

@@ -26,7 +26,7 @@
 - Install the required packages using `pip install -r requirements.txt`
 - Preview the template using `quarto preview`
 
-## Creating a new public github repo for submission
+## Create a new public github repo for submission
 
 - Run `quarto render` to generate the article web files
 - This will create a `public` folder with the website files
@@ -42,8 +42,12 @@
   - Commit the changes using `git commit -m "Initial commit"`
   - Add the remote repository using `git remote add origin <repository-url>`. This repository is the one created in the above step.
   - Push the changes to the remote repository using `git push -u origin main`
-- You can also Github Pages to host the website in your Github account and share the link internally for review
-- Once your article is finalized, submit the new repository link to publish it in the main website
+    
+## Submit for Review
+
+- Use Github Pages to host the website in your Github account
+- Send the github pages website link to cesta-online@stanford.edu with the subject line "For Review"
+- When you receive approval and are ready, submit the new repository link to publish it in the main website
 
 ## Important Notes
 

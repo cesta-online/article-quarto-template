@@ -1,6 +1,8 @@
-# Anthology Template File for Quarto
+# Contribute CESTA Anthology Entry
 
-## Prerequisites
+Each CESTA Anthology project entry will be in its own repository. You will copy the template from CESTA-Online, create the entry in your own Github account. preview it, and submit it for review. CESTA-Online uses Quarto. Follow the instructions below to set-up your local environment to run Quarto. 
+
+## Install prerequisites
 
 - Github Account
 - Git
@@ -11,7 +13,7 @@
   - GitHub should be configured in VS Code to manage the repository easily
   - Quarto extension can be install in VS Code to preview and render the website
 
-## Usage
+## Copy the template to a Github repository
 
 - Make a copy of the template to your GitHub account
   - The template can be copied by clicking on the `Use this template` button in the repository
@@ -19,12 +21,22 @@
   - The repository name should be in the format `anthology-{project-name}-{quarter}-{year}`. For example, `anthology-know-systemic-racism-spring-2023`.
   - Keep the repository public.
   - Copy the repository link to your clipboard.
+ 
+## Set up a virtual environment on your local machine
+
 - Using VS Code, clone the copied repository to your local machine
 - Open the cloned repository in VS Code
 - Setup the virtual environment using `python -m venv .venv`
 - Activate the virtual environment using `source .venv/bin/activate` (Mac & Linux) or `.\.venv\Scripts\Activate` (Windows)
 - Install the required packages using `pip install -r requirements.txt`
+
+## Build your project site
+
 - Preview the template using `quarto preview`
+- Add content to the template following the guidelines. Any changes you make will appear immediately in a browser window via Quarto preview.
+- See Quarto documentation for [details about adding interactive content to your site](https://quarto.org/docs/interactive/)
+
+  
 
 ## Create a new public github repo for submission
 

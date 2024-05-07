@@ -29,16 +29,13 @@ Each CESTA Anthology project entry will be in its own repository. You will copy 
 - Setup the virtual environment using `python -m venv .venv`
 - Activate the virtual environment using `source .venv/bin/activate` (Mac & Linux) or `.\.venv\Scripts\Activate` (Windows)
 - Install the required packages using `pip install -r requirements.txt`
-  <<<<<<< HEAD
-- Preview the template using `quarto preview`
-- # Running `quarto preview` will create the website files in the `public` folder. You can use Github Pages to host the website in your Github account and share the link internally for review. The website link will be in the format `https://{github-username}.github.io/{repository-name}/public`.
-  > > > > > > > 1604d230f60d63acd164ce35a399924c9a951740
 
 ## Build your project site
 
 - Preview the template using `quarto preview`
 - Add content to the template following the guidelines. Any changes you make will appear immediately in a browser window via Quarto preview.
 - See Quarto documentation for [details about adding interactive content to your site](https://quarto.org/docs/interactive/)
+- Running `quarto preview` will create the website files in the `public` folder. You can use Github Pages to host the website in your Github account and share the link internally for review. The website link will be in the format `https://{github-username}.github.io/{repository-name}/public`.
 
 ## How to submit your article for review
 

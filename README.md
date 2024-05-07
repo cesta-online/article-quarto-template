@@ -38,7 +38,7 @@ Each CESTA Anthology project entry will be in its own repository. You will copy 
 
   
 
-## Create a new public github repo for submission
+## Create a public repository for submission
 
 - Run `quarto render` to generate the article web files
 - This will create a `public` folder with the website files

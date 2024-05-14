@@ -1,6 +1,6 @@
 # Contribute CESTA Anthology Entry
 
-Each CESTA Anthology project entry will be in its own repository. You will copy the template from CESTA-Online, create the entry in your own Github account. preview it, and submit it for review. CESTA-Online uses Quarto. Follow the instructions below to set-up your local environment to run Quarto.
+Each CESTA Anthology project entry will be in its own repository. You will copy the template from CESTA-Online, create the entry in your own Github account, generate a preview in Github Pages, and submit it for review. CESTA-Online uses Quarto. Follow the instructions below to set-up your local environment to run Quarto.
 
 ## Install prerequisites
 

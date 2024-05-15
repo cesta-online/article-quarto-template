@@ -11,6 +11,7 @@ $if(image)$
 </div>
 $endif$
 <div class="project-details-container">
+  $if(project-members)$
   <div class="project-members-container">
     <h5>Project Members</h5>
     $for(project-members)$
@@ -20,6 +21,7 @@ $endif$
     </div>
     $endfor$
   </div>
+  $endif$
   $if(project-description)$<div class="project-description-container">
     <h5>Project Description</h5>
     <p class="project-description">$project-description$</p>

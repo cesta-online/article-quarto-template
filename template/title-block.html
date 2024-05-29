@@ -18,6 +18,7 @@ $endif$
     <div class="project-member">
       <p class="name">$project-members.name$</p>
       <p class="designation">$project-members.designation$</p>
+      $if(project-members.orcid)$<a href="$project-members.orcid$" target="_blank" class="orcid">$project-members.orcid$</a>$endif$
     </div>
     $endfor$
   </div>

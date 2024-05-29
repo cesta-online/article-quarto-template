@@ -1,5 +1,6 @@
 ---
 # do not edit starts
+jupyter: python3
 toc: true
 execute: 
   freeze: auto
@@ -13,15 +14,14 @@ format:
 # do not edit ends
 title: "Anthology Article Template"
 session: "Summer 2023"
-jupyter: python3
 image: "data/imgs/placeholder.jpg"
 project-members:
   - name: Dr. Jane Doe
     designation: Faculty Director of Department
-    orcid: https://orcid.org/0000-0002-3360-1975
+    orcid: https://orcid.org/0000-0000-0000-0000
   - name: John Doe
     designation: Intern - Summer, 2023
-    orcid: https://orcid.org/0000-0002-3360-1975
+    orcid: https://orcid.org/0000-0000-0000-0000
 
 project-description: "The project Description contains few lines of description about the project. The description should be succint and give the reader a brief overview of what they could expect in the article. The project description can span from 4-5 lines and it is expected to capture the complete essence of the project. This article page comprises of two sub-articles related to the group. The article 1 focuses on the authoring capabilites of quarto and article 2 focuses on the computational capabilities. This article page is made using Quarto."
 

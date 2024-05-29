@@ -28,6 +28,7 @@ Each CESTA Anthology project entry will be in its own repository. You will copy 
 - Open the cloned repository in VS Code
 - Setup the virtual environment using `python -m venv .venv` or `python3 -m venv .venv`
 - Activate the virtual environment using `source .venv/bin/activate` (Mac & Linux) or `.\.venv\Scripts\Activate` (Windows)
+  - You must activate the virtual environment every time you close and reopen the vscode.
 - Install the required packages using `pip install -r requirements.txt`
 
 ## Build your project site

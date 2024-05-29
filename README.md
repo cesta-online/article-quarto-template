@@ -8,8 +8,8 @@ Each CESTA Anthology project entry will be in its own repository. You will copy 
 - Git
 - Python 3.6 or later
   > For Mac, use [Homebrew](https://brew.sh/) to install both Git and Python if you don't have them installed already.
-- [Quarto](https://quarto.org)
-- [VS Code](https://code.visualstudio.com/)
+- [Quarto](https://quarto.org) (install the latest version)
+- [VS Code](https://code.visualstudio.com/) (latest version)
   - GitHub should be configured in VS Code to manage the repository easily
   - Quarto extension can be install in VS Code to preview and render the website
 
@@ -26,7 +26,7 @@ Each CESTA Anthology project entry will be in its own repository. You will copy 
 
 - Using VS Code, clone the copied repository to your local machine
 - Open the cloned repository in VS Code
-- Setup the virtual environment using `python -m venv .venv`
+- Setup the virtual environment using `python -m venv .venv` or `python3 -m venv .venv`
 - Activate the virtual environment using `source .venv/bin/activate` (Mac & Linux) or `.\.venv\Scripts\Activate` (Windows)
 - Install the required packages using `pip install -r requirements.txt`
 

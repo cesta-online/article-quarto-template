@@ -15,15 +15,17 @@ format:
 title: "Anthology Article Template"
 session: "Summer 2023"
 image: "data/imgs/placeholder.jpg"
-project-members:
-  - name: Dr. Jane Doe
+project-members: 
+  - name: Dr. Jane Doe 
     designation: Faculty Director of Department
-    orcid: https://orcid.org/0000-0000-0000-0000
+    orcid: 0000-0000-0000-0000
   - name: John Doe
     designation: Intern - Summer, 2023
-    orcid: https://orcid.org/0000-0000-0000-0000
+    orcid: 0000-0000-0000-0000
 
 project-description: "The project Description contains few lines of description about the project. The description should be succint and give the reader a brief overview of what they could expect in the article. The project description can span from 4-5 lines and it is expected to capture the complete essence of the project. This article page comprises of two sub-articles related to the group. The article 1 focuses on the authoring capabilites of quarto and article 2 focuses on the computational capabilities. This article page is made using Quarto."
+
+author-contributions: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
 ---
 # Title of Article 1

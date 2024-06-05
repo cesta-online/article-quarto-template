@@ -4,27 +4,49 @@
   $if(subtitle)$
   <p class="subtitle">$subtitle$</p>
   $endif$
+  $if(project-description)$<div class="project-description-container">
+    <p class="project-description">$project-description$</p>
+  </div>
+  $endif$
 </header>
-$if(image)$
+<!-- $if(image)$
 <div class="header-img-container">
   <img src="$image$" alt=" header image"></img>
 </div>
-$endif$
+$endif$ -->
 <div class="project-details-container">
   $if(project-members)$
   <div class="project-members-container">
-    <h5>Project Members</h5>
+    <div class="d-sm-none d-block">
+      <h4>Project Members</h4>
+    </div>
+    <div class="row d-sm-flex d-none">
+      <div class="col-sm">
+        <p>Project Member</p>
+      </div>
+      <div class="col-sm">
+        <p>Designation</p>
+      </div>
+      <div class="col-sm">
+        <p class="orcid">ORCID</p>
+      </div>
+    </div>
     $for(project-members)$
-    <div class="project-member">
-      <p class="name">$project-members.name$</p>
-      <p class="designation">$project-members.designation$</p>
-      $if(project-members.orcid)$<a href="$project-members.orcid$" target="_blank" class="orcid">$project-members.orcid$</a>$endif$
+    <div class="project-member row">
+      <div class="col-sm">
+        <p class="name">$project-members.name$</p>
+      </div>
+      <div class="col-sm">
+        <p class="designation">$project-members.designation$</p>
+      </div>
+      <div class="col-sm">$if(project-members.orcid)$<a href="https://orcid.org/$project-members.orcid$" target="_blank" class="orcid">$project-members.orcid$</a>$endif$</div>
     </div>
     $endfor$
   </div>
   $endif$
-  $if(project-description)$<div class="project-description-container">
-    <h5>Project Description</h5>
-    <p class="project-description">$project-description$</p>
-  </div>$endif$
+  $if(author-contributions)$<div class="author-contributions-container">
+    <h4>Author Contributions</h4>
+    <p class="author-contributions">$author-contributions$</p>
+  </div>
+  $endif$
 </div>
